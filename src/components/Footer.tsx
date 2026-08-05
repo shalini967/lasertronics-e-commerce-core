@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import { Clock, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
 
 import logo from "@/assets/logo.png";
 
@@ -59,15 +59,19 @@ export function Footer() {
           <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-              No. 214, Union Place, Colombo 02, Sri Lanka
+              91 1st Cross St, Colombo 00110, Sri Lanka
             </li>
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 shrink-0 text-primary" />
-              +94 11 234 5678
+              +94 77 788 2156
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 shrink-0 text-primary" />
-              hello@lasertronics.lk
+              lasertronicss@gmail.com
+            </li>
+            <li className="flex items-start gap-2">
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              Closes soon · 7 pm · Opens 9 am Thu
             </li>
           </ul>
           <div className="mt-6 flex gap-2">

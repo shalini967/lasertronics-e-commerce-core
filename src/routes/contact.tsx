@@ -42,19 +42,19 @@ function Contact() {
             <ul className="mt-6 space-y-5 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                No. 214, Union Place, Colombo 02, Sri Lanka
+                91 1st Cross St, Colombo 00110, Sri Lanka
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-primary" />
-                +94 11 234 5678
+                +94 77 788 2156
               </li>
               <li className="flex gap-3">
                 <Mail className="h-5 w-5 shrink-0 text-primary" />
-                hello@lasertronics.lk
+                lasertronicss@gmail.com
               </li>
               <li className="flex gap-3">
                 <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                Mon–Fri 8.30am–6pm · Sat 9am–1pm
+                Closes soon · 7 pm · Opens 9 am Thu
               </li>
             </ul>
           </div>
