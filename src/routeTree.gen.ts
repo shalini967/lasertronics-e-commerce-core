@@ -10,33 +10,141 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ElectronicsRouteImport } from './routes/electronics'
+import { Route as IotMicrocontrollersRouteImport } from './routes/iot-microcontrollers'
+import { Route as MobileAccessoriesRouteImport } from './routes/mobile-accessories'
+import { Route as RepairKitsRouteImport } from './routes/repair-kits'
+import { Route as SolutionsRouteImport } from './routes/solutions'
+import { Route as TvAccessoriesRouteImport } from './routes/tv-accessories'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectronicsRoute = ElectronicsRouteImport.update({
+  id: '/electronics',
+  path: '/electronics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IotMicrocontrollersRoute = IotMicrocontrollersRouteImport.update({
+  id: '/iot-microcontrollers',
+  path: '/iot-microcontrollers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MobileAccessoriesRoute = MobileAccessoriesRouteImport.update({
+  id: '/mobile-accessories',
+  path: '/mobile-accessories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RepairKitsRoute = RepairKitsRouteImport.update({
+  id: '/repair-kits',
+  path: '/repair-kits',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolutionsRoute = SolutionsRouteImport.update({
+  id: '/solutions',
+  path: '/solutions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TvAccessoriesRoute = TvAccessoriesRouteImport.update({
+  id: '/tv-accessories',
+  path: '/tv-accessories',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/electronics': typeof ElectronicsRoute
+  '/iot-microcontrollers': typeof IotMicrocontrollersRoute
+  '/mobile-accessories': typeof MobileAccessoriesRoute
+  '/repair-kits': typeof RepairKitsRoute
+  '/solutions': typeof SolutionsRoute
+  '/tv-accessories': typeof TvAccessoriesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/electronics': typeof ElectronicsRoute
+  '/iot-microcontrollers': typeof IotMicrocontrollersRoute
+  '/mobile-accessories': typeof MobileAccessoriesRoute
+  '/repair-kits': typeof RepairKitsRoute
+  '/solutions': typeof SolutionsRoute
+  '/tv-accessories': typeof TvAccessoriesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/electronics': typeof ElectronicsRoute
+  '/iot-microcontrollers': typeof IotMicrocontrollersRoute
+  '/mobile-accessories': typeof MobileAccessoriesRoute
+  '/repair-kits': typeof RepairKitsRoute
+  '/solutions': typeof SolutionsRoute
+  '/tv-accessories': typeof TvAccessoriesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/electronics'
+    | '/iot-microcontrollers'
+    | '/mobile-accessories'
+    | '/repair-kits'
+    | '/solutions'
+    | '/tv-accessories'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/electronics'
+    | '/iot-microcontrollers'
+    | '/mobile-accessories'
+    | '/repair-kits'
+    | '/solutions'
+    | '/tv-accessories'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/electronics'
+    | '/iot-microcontrollers'
+    | '/mobile-accessories'
+    | '/repair-kits'
+    | '/solutions'
+    | '/tv-accessories'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  ElectronicsRoute: typeof ElectronicsRoute
+  IotMicrocontrollersRoute: typeof IotMicrocontrollersRoute
+  MobileAccessoriesRoute: typeof MobileAccessoriesRoute
+  RepairKitsRoute: typeof RepairKitsRoute
+  SolutionsRoute: typeof SolutionsRoute
+  TvAccessoriesRoute: typeof TvAccessoriesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,22 +156,76 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electronics': {
+      id: '/electronics'
+      path: '/electronics'
+      fullPath: '/electronics'
+      preLoaderRoute: typeof ElectronicsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/iot-microcontrollers': {
+      id: '/iot-microcontrollers'
+      path: '/iot-microcontrollers'
+      fullPath: '/iot-microcontrollers'
+      preLoaderRoute: typeof IotMicrocontrollersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mobile-accessories': {
+      id: '/mobile-accessories'
+      path: '/mobile-accessories'
+      fullPath: '/mobile-accessories'
+      preLoaderRoute: typeof MobileAccessoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/repair-kits': {
+      id: '/repair-kits'
+      path: '/repair-kits'
+      fullPath: '/repair-kits'
+      preLoaderRoute: typeof RepairKitsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solutions': {
+      id: '/solutions'
+      path: '/solutions'
+      fullPath: '/solutions'
+      preLoaderRoute: typeof SolutionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tv-accessories': {
+      id: '/tv-accessories'
+      path: '/tv-accessories'
+      fullPath: '/tv-accessories'
+      preLoaderRoute: typeof TvAccessoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  ElectronicsRoute: ElectronicsRoute,
+  IotMicrocontrollersRoute: IotMicrocontrollersRoute,
+  MobileAccessoriesRoute: MobileAccessoriesRoute,
+  RepairKitsRoute: RepairKitsRoute,
+  SolutionsRoute: SolutionsRoute,
+  TvAccessoriesRoute: TvAccessoriesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
