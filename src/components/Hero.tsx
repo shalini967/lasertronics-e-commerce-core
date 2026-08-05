@@ -36,6 +36,9 @@ export function Hero() {
     return () => clearInterval(timer);
   }, []);
 
+  const active = slides[index] ?? slides[0]!;
+
+
   return (
     <section className="relative isolate min-h-[calc(100svh-5rem)] overflow-hidden" aria-label="Featured">
       {slides.map((slide, i) => (
