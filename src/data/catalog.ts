@@ -15,6 +15,19 @@ import p9 from "@/assets/p9.jpg";
 import p10 from "@/assets/p10.jpg";
 import p11 from "@/assets/p11.jpg";
 import p12 from "@/assets/p12.jpg";
+import p13 from "@/assets/p13.jpg";
+import p14 from "@/assets/p14.jpg";
+import p15 from "@/assets/p15.jpg";
+import p16 from "@/assets/p16.jpg";
+import p17 from "@/assets/p17.jpg";
+import p18 from "@/assets/p18.jpg";
+import p19 from "@/assets/p19.jpg";
+import p20 from "@/assets/p20.jpg";
+import p21 from "@/assets/p21.jpg";
+import p22 from "@/assets/p22.jpg";
+import p23 from "@/assets/p23.jpg";
+import p24 from "@/assets/p24.jpg";
+import p25 from "@/assets/p25.jpg";
 
 export type CategorySlug =
   | "mobile-accessories"
@@ -200,6 +213,136 @@ export const products: Product[] = [
     reviews: 74,
     image: p12,
     category: "tv-accessories",
+  },
+  {
+    id: "lt-magstand",
+    name: "Magnetic Wireless Charging Stand",
+    description: "15W magnetic stand with adjustable viewing angle and cooling vents.",
+    price: 6450,
+    rating: 4,
+    reviews: 142,
+    image: p13,
+    category: "mobile-accessories",
+  },
+  {
+    id: "lt-benchpsu",
+    name: "Bench DC Power Supply 30V 5A",
+    description: "Programmable output with fine current limiting and digital readout.",
+    price: 24500,
+    rating: 5,
+    reviews: 63,
+    image: p14,
+    category: "electronics",
+  },
+  {
+    id: "lt-scope",
+    name: "Digital Storage Oscilloscope 100MHz",
+    description: "Two-channel scope with deep memory and automatic measurements.",
+    price: 87500,
+    rating: 5,
+    reviews: 41,
+    image: p15,
+    category: "electronics",
+  },
+  {
+    id: "lt-components",
+    name: "Electronic Components Assortment Box",
+    description: "Sorted resistors, capacitors, diodes and LEDs in a labelled case.",
+    price: 4350,
+    rating: 4,
+    reviews: 209,
+    image: p16,
+    category: "electronics",
+  },
+  {
+    id: "lt-fume",
+    name: "Solder Fume Extractor",
+    description: "Quiet bench extractor with replaceable carbon filter cartridge.",
+    price: 11250,
+    rating: 4,
+    reviews: 57,
+    image: p17,
+    category: "electronics",
+  },
+  {
+    id: "lt-remote",
+    name: "Universal Smart TV Remote",
+    description: "Pre-programmed for major brands with learning IR function.",
+    price: 2150,
+    rating: 4,
+    reviews: 318,
+    image: p18,
+    category: "tv-accessories",
+  },
+  {
+    id: "lt-tvbox",
+    name: "4K Android TV Streaming Box",
+    description: "HDR10 streaming box with voice remote and dual-band WiFi.",
+    price: 15900,
+    rating: 5,
+    reviews: 127,
+    image: p19,
+    category: "tv-accessories",
+  },
+  {
+    id: "lt-soundbar",
+    name: "Slim TV Soundbar 2.1",
+    description: "Bluetooth soundbar with wireless subwoofer and HDMI ARC.",
+    price: 22900,
+    rating: 4,
+    reviews: 84,
+    image: p20,
+    category: "tv-accessories",
+  },
+  {
+    id: "lt-sbc",
+    name: "Single Board Computer 4GB",
+    description: "Quad-core SBC with gigabit ethernet and 40-pin GPIO header.",
+    price: 26500,
+    rating: 5,
+    reviews: 152,
+    image: p21,
+    category: "iot-microcontrollers",
+  },
+  {
+    id: "lt-lora",
+    name: "LoRa Long Range Module",
+    description: "868MHz transceiver module with antenna for low-power telemetry.",
+    price: 4750,
+    rating: 4,
+    reviews: 68,
+    image: p22,
+    category: "iot-microcontrollers",
+  },
+  {
+    id: "lt-servo",
+    name: "Metal Gear Servo Motor Kit",
+    description: "High-torque servos with horns, screws and mounting brackets.",
+    price: 5650,
+    rating: 4,
+    reviews: 96,
+    image: p23,
+    category: "iot-microcontrollers",
+  },
+  {
+    id: "lt-esdmat",
+    name: "ESD Safe Repair Mat Kit",
+    description: "Anti-static mat with magnetic screw zones, tweezers and spudgers.",
+    price: 6250,
+    rating: 5,
+    reviews: 133,
+    image: p24,
+    category: "repair-kits",
+  },
+  {
+    id: "lt-heatgun",
+    name: "Hot Air Rework Station",
+    description: "Digital hot air station with multiple nozzles for SMD rework.",
+    price: 21500,
+    rating: 5,
+    reviews: 71,
+    image: p25,
+    category: "repair-kits",
   },
 ];
 

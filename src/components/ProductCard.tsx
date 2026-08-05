@@ -1,4 +1,4 @@
-import { Eye, Heart, ShoppingCart, Star } from "lucide-react";
+import { Heart, ShoppingCart, Star, Zap } from "lucide-react";
 import { useState } from "react";
 
 import { formatLKR, type Product } from "@/data/catalog";
@@ -38,9 +38,9 @@ export function ProductCard({ product }: { product: Product }) {
         </button>
         <button
           type="button"
-          className="absolute inset-x-3 bottom-3 flex translate-y-4 items-center justify-center gap-2 rounded-full border border-border bg-background/75 py-2.5 text-sm font-medium opacity-0 backdrop-blur-md transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+          className="absolute inset-x-3 bottom-3 flex translate-y-4 items-center justify-center gap-2 rounded-full bg-primary py-2.5 text-sm font-semibold text-primary-foreground opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
         >
-          <Eye className="h-4 w-4" /> Quick View
+          <Zap className="h-4 w-4" /> Buy Now
         </button>
       </div>
 
