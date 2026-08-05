@@ -66,12 +66,12 @@ export function Hero() {
           </div>
 
           <p className="mt-8 inline-flex rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
-            {slides[index].eyebrow}
+            {active.eyebrow}
           </p>
           <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
-            {slides[index].headline}
+            {active.headline}
           </h1>
-          <p className="mt-5 max-w-xl text-lg text-muted-foreground">{slides[index].sub}</p>
+          <p className="mt-5 max-w-xl text-lg text-muted-foreground">{active.sub}</p>
 
           <div className="mt-9 flex flex-wrap gap-3">
             <a
