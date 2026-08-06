@@ -43,6 +43,9 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-hero-dark: var(--hero-dark);
+  --color-hero-dark-foreground: var(--hero-dark-foreground);
+  --color-hero-dark-muted: var(--hero-dark-muted);
   --color-star: var(--star);
 
   --shadow-premium: 0 12px 32px -18px oklch(0.2 0.02 260 / 0.28);
