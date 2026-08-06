@@ -31,8 +31,8 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "border-b border-border bg-background/85 backdrop-blur-xl shadow-[0_10px_30px_-20px_oklch(0_0_0/0.9)]"
-          : "bg-background/40 backdrop-blur-md"
+          ? "border-b border-border bg-background/85 backdrop-blur-xl shadow-[0_8px_24px_-20px_oklch(0_0_0/0.35)]"
+          : "bg-background/80 backdrop-blur-md"
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center gap-4 px-4 sm:px-6">
