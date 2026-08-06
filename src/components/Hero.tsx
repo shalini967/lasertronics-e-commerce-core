@@ -54,7 +54,7 @@ export function Hero() {
           }`}
         />
       ))}
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/25" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/92 to-background/55" />
 
       <div className="relative mx-auto flex min-h-[calc(100svh-5rem)] max-w-7xl items-center px-4 py-20 sm:px-6">
         <div key={index} className="max-w-2xl animate-fade-up">
@@ -99,7 +99,7 @@ export function Hero() {
                 onClick={() => setIndex(i)}
                 aria-label={`Show slide ${i + 1}`}
                 className={`h-1.5 rounded-full transition-all ${
-                  i === index ? "w-10 bg-primary" : "w-5 bg-foreground/25 hover:bg-foreground/50"
+                  i === index ? "w-10 bg-primary" : "w-5 bg-foreground/20 hover:bg-foreground/40"
                 }`}
               />
             ))}
