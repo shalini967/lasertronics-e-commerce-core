@@ -40,69 +40,69 @@ export function Hero() {
 
 
   return (
-    <section className="relative isolate min-h-[calc(100svh-5rem)] overflow-hidden" aria-label="Featured">
-      {slides.map((slide, i) => (
-        <img
-          key={slide.headline}
-          src={slide.image}
-          alt=""
-          aria-hidden="true"
-          width={1920}
-          height={1080}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
-            i === index ? "opacity-100" : "opacity-0"
-          }`}
-        />
-      ))}
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/92 to-background/55" />
+    <section className="mx-auto max-w-7xl px-4 pb-10 pt-6 sm:px-6" aria-label="Featured">
+      <div className="mb-6 flex items-center gap-3">
+        <img src={logo} alt="" aria-hidden="true" width={48} height={48} className="h-12 w-12" />
+        <div>
+          <p className="font-display text-lg font-bold leading-none">Lasertronics</p>
+          <p className="mt-1 text-xs tracking-wide text-muted-foreground">Prototype by ValGrow Labs</p>
+        </div>
+      </div>
 
-      <div className="relative mx-auto flex min-h-[calc(100svh-5rem)] max-w-7xl items-center px-4 py-20 sm:px-6">
-        <div key={index} className="max-w-2xl animate-fade-up">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="" aria-hidden="true" width={56} height={56} className="h-14 w-14" />
-            <div>
-              <p className="font-display text-xl font-bold leading-none">Lasertronics</p>
-              <p className="mt-1 text-xs tracking-wide text-muted-foreground">
-                Prototype by ValGrow Labs
-              </p>
+      <div className="relative isolate overflow-hidden rounded-[2rem] bg-hero-dark text-hero-dark-foreground shadow-premium">
+        {slides.map((slide, i) => (
+          <img
+            key={slide.headline}
+            src={slide.image}
+            alt=""
+            aria-hidden="true"
+            width={1920}
+            height={1080}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+              i === index ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-hero-dark via-hero-dark/90 to-hero-dark/40" />
+
+        <div className="relative px-6 py-14 sm:px-12 sm:py-20 lg:py-28">
+          <div key={index} className="max-w-2xl animate-fade-up">
+            <p className="font-mono text-xs font-semibold uppercase tracking-[0.3em] text-primary sm:text-sm">
+              {active.eyebrow}
+            </p>
+            <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl">
+              {active.headline}
+            </h1>
+            <p className="mt-5 max-w-lg text-base text-hero-dark-muted sm:text-lg">{active.sub}</p>
+
+            <div className="mt-9 flex flex-wrap gap-3">
+              <a
+                href="#featured"
+                className="inline-flex items-center gap-3 rounded-md bg-primary px-8 py-4 text-base font-bold text-primary-foreground transition-all hover:brightness-110 active:scale-95"
+              >
+                Shop Now <ArrowRight className="h-5 w-5" />
+              </a>
+              <Link
+                to="/electronics"
+                className="inline-flex items-center gap-2 rounded-md border border-hero-dark-foreground/25 px-8 py-4 text-base font-semibold transition-colors hover:border-primary hover:text-primary"
+              >
+                Explore Products
+              </Link>
             </div>
-          </div>
 
-          <p className="mt-8 inline-flex rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
-            {active.eyebrow}
-          </p>
-          <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
-            {active.headline}
-          </h1>
-          <p className="mt-5 max-w-xl text-lg text-muted-foreground">{active.sub}</p>
-
-          <div className="mt-9 flex flex-wrap gap-3">
-            <a
-              href="#featured"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 hover:shadow-glow active:scale-95"
-            >
-              Shop Now <ArrowRight className="h-4 w-4" />
-            </a>
-            <Link
-              to="/electronics"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-background/40 px-7 py-3.5 text-sm font-semibold backdrop-blur-md transition-all hover:border-primary/50 hover:text-primary active:scale-95"
-            >
-              Explore Products
-            </Link>
-          </div>
-
-          <div className="mt-12 flex gap-2">
-            {slides.map((slide, i) => (
-              <button
-                key={slide.headline}
-                type="button"
-                onClick={() => setIndex(i)}
-                aria-label={`Show slide ${i + 1}`}
-                className={`h-1.5 rounded-full transition-all ${
-                  i === index ? "w-10 bg-primary" : "w-5 bg-foreground/20 hover:bg-foreground/40"
-                }`}
-              />
-            ))}
+            <div className="mt-12 flex gap-2">
+              {slides.map((slide, i) => (
+                <button
+                  key={slide.headline}
+                  type="button"
+                  onClick={() => setIndex(i)}
+                  aria-label={`Show slide ${i + 1}`}
+                  className={`h-2 rounded-full transition-all ${
+                    i === index ? "w-12 bg-primary" : "w-6 bg-hero-dark-foreground/25 hover:bg-hero-dark-foreground/40"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
